@@ -1,32 +1,26 @@
 #include <iostream>
 #include <cmath>
 int main() {
-    double a,x,y,b,z,k,c,d,t;
+    double a,n,m,d,x,y,k;
+    std::cout << "Введите n: ";
+    std::cin >> n;
+    std::cout << "Введите m: ";
+    std::cin >> m;
     std::cout << "Введите x: ";
     std::cin >> x;
-    std::cout << "Введите y: ";
-    std::cin >> y;
-    std::cout << "Введите z: ";
-    std::cin >> z;
     std::cout << "Введите k: ";
     std::cin >> k;
-    std::cout << "Введите c: ";
-    std::cin >> c;
     std::cout << "Введите d: ";
     std::cin >> d;
-    if (z < 0) {
+    if (a == 0) {
         std::cout << "error";
-    } else if (k-(c*d)==0){
+    } else if (cos(x) == 0) {
         std::cout << "error";
-    } else if (cos(x) > 1) {
-        std::cout << "error";}
-        else if (cos(x) < -1) {
-        std::cout << "error";}
-        else {
-        a = x-y;
-        b = sqrt(z);
-        t = cos(x)+pow(a,2)/(k-c*d)-b;
-        std::cout << t;
-        return 0;
+    } else {
+        a = fabs(n+m);
+        d = tan(x);
+        y = 1.29+k/a+ pow(d,2);
+        std::cout << y;
     }
+
 }
