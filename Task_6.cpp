@@ -13,10 +13,11 @@ int main() {
         std::cout << "error";
     } else if (b == 0) {
         std::cout << "error";
-    }
-    a = d*x/b;
+    } else {
+        a = d*x/b;
     b = x+d;
     s = pow(a,2) + (b*cos(x))/
     pow(d,3)+(a+d-b);
     std::cout << s;
+    }
 }
