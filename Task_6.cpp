@@ -1,15 +1,14 @@
 #include <iostream>
 #include <cmath>
 int main() {
-    double a,d,b,s;
-    int x;
+    double a,d,b,s,x;
     std::cout << "Введите значение d: ";
     std::cin >> d;
     std::cout << "Введите значение x: ";
     std::cin >> x;
-    if (x > 1) {
+    if (cos(x) > 1) {
         std::cout << "error";
-    } else if ( -1 > x) {
+    } else if ( -1 > cos(x)) {
         std::cout << "error";
     } else if (b == 0) {
         std::cout << "error";
