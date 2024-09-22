@@ -3,10 +3,6 @@
 int main() {
     double a,d,b,s;
     int x;
-    std::cout << "Введите значение a: ";
-    std::cin >> a;
-    std::cout << "Введите значение b: ";
-    std::cin >> b;
     std::cout << "Введите значение d: ";
     std::cin >> d;
     std::cout << "Введите значение x: ";
