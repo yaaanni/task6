@@ -1,8 +1,7 @@
 #include <iostream>
 #include <cmath>
 int main() {
-    double a,d,k,e,b,x,y,c,p;
-    e = 2,71828182845904;
+    double a,d,k,b,x,y,c,p;
     std::cout << "Введите значение x: ";
     std::cin >> x;
     std::cout << "Введите значение p: ";
@@ -21,7 +20,7 @@ int main() {
         std::cout << "error";
     } else {
         a = x+sin(p);
-    b = pow(e,k);
+    b = exp(k);
     y = 1+pow(k,2)/(2*a*b)-b+d*c;
     std::cout << y;
     }
