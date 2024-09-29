@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cmath>
 int main() {
-    double b,x,c,p,n,q,k,d;
+    double b,x,c,p,n,q,k,d,pi;
+    pi = 3,14159265;
     std::cout << "Введите x: ";
     std::cin >> x;
     std::cout << "Введите p: ";
@@ -12,15 +13,16 @@ int main() {
     std::cin >> k;
     std::cout << "Введите d: ";
     std::cin >> d;
-    if (cos(x)<-1) {
+    if (cos(pi*x/180)<-1) {
         std::cout << "error";
-    } else if (cos(x)>1) { std::cout << "error";}
+    } else if (cos(pi*x/180)>1) { std::cout << "error";}
     else if (k*d==0) {
         std::cout << "error";
     } else {
-    b = cos(x);
+    b = cos(pi*x/180);
     c = p - n;
     q = pow(b,2)/(k*d)+b*pow(c,3);
     std::cout << q;
     }
+    return 0;
 }
