@@ -24,4 +24,5 @@ int main() {
         y = pow(d,2)+pow(c,2)/(0.75*a)+b;
         std::cout << y;
     }
+    return 0;
     }
