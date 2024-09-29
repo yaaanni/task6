@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cmath>
 int main() {
-    double a,n,m,d,x,y,k;
+    double a,n,m,d,x,y,k,pi;
+    pi = 3,14159265;
     std::cout << "Введите n: ";
     std::cin >> n;
     std::cout << "Введите m: ";
@@ -14,7 +15,7 @@ int main() {
     std::cin >> d;
     if (a == 0) {
         std::cout << "error";
-    } else if (cos(x) == 0) {
+    } else if (cos(pi*x/180) == 0) {
         std::cout << "error";
     } else {
         a = fabs(n+m);
@@ -22,5 +23,5 @@ int main() {
         y = 1.29+k/a+ pow(d,2);
         std::cout << y;
     }
-
+return 0;
 }
