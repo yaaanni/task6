@@ -20,4 +20,5 @@ int main() {
         s = 10.1 + a/c +d/(k*k);
         std::cout << s;
     }
+    return 0;
 }
