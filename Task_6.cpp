@@ -20,4 +20,5 @@ int main() {
         y = (a+b)-pow(c,2)/k;
         std::cout << y;
     }
+    return 0;
 }
